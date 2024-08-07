@@ -1,4 +1,36 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Estilos para os campos de entrada */
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px); /* Largura ajustada */
+    padding: 15px 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Margem */
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o botão */
+button {
+    width: 100%;
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 15px 0; /* Espaçamento interno */
+    margin: 10px 0; /* Margem */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
 }
