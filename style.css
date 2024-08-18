@@ -1,14 +1,14 @@
 /* Estilos para os campos de entrada */
 input[type="text"], input[type="password"] {
     width: calc(100% - 20px); /* Largura ajustada */
-    padding: 15px 10px; /* Espaçamento interno */
+    padding: 10px; /* Espaçamento interno */
     margin: 10px 0; /* Margem */
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Contorno com sombra */
 }
 
 /* Estilos para o botão */
@@ -22,6 +22,7 @@ button {
     border-radius: 4px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor de ponteiro */
     font-size: 18px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Contorno com sombra */
 }
 
 button:hover {
@@ -33,4 +34,14 @@ label {
     font-size: 18px;
     margin-top: 10px;
     display: block;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Cor da borda ao focar */
+    outline: none; /* Remove o outline padrão */
+}
+
+/* Adiciona efeito de hover no botão */
+button:hover {
+    background-color: #218838; /* Cor de fundo ao passar o mouse */
 }
